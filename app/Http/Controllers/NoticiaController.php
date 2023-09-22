@@ -36,6 +36,7 @@ class NoticiaController extends Controller
     public function create()
     {
         //echo "Metodo CREATE";
+        $this->authorize('create', Noticia::class);
         return view('viewsNoticias.create');
     }
 

@@ -20,14 +20,15 @@
                         {{ __('Noticias') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="route('noticias.index')" :active="request()->routeIs('noticias.index')">
-                        {{ __('Usuários') }}
+                    <x-nav-link :href="route('roles.index')" :active="request()->routeIs('papeis.index')">
+                        {{ __('Papeis') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="route('noticias.index')" :active="request()->routeIs('noticias.index')">
-                        {{ __('Permissões') }}
+                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('usuarios.index')">
+                        {{ __('Usuarios') }}
                     </x-nav-link>
                 </div>
+                
             </div>
 
             <!-- Settings Dropdown -->
